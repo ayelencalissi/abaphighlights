@@ -39,33 +39,59 @@ START-OF-SELECTION.
   lv_obj_type = 'KNA1'.
   lv_obj_id = '0000100606'.
 *
-  CLEAR ls_bapiadsmtp.
-  ls_bapiadsmtp-e_mail = 'cuartomail@gmail.com'.
-*  ls_bapiadsmtp-CONSNUMBER = '099'.
-  ls_bapiadsmtp-EMAIL_SRCH = 'cuartomail@gmail.com'.
-  APPEND ls_bapiadsmtp TO lt_bapiadsmtp.
+*  CLEAR ls_bapiadsmtp.
+*  ls_bapiadsmtp-e_mail = 'cuartomail@gmail.com'.
+**  ls_bapiadsmtp-CONSNUMBER = '099'.
+*  ls_bapiadsmtp-EMAIL_SRCH = 'cuartomail@gmail.com'.
+*  APPEND ls_bapiadsmtp TO lt_bapiadsmtp.
+*
+*  CLEAR ls_bapiadsmt_x.
+*  ls_bapiadsmt_x-UPDATEFLAG = 'I'.
+*  ls_bapiadsmt_x-e_mail = 'X'.
+*  ls_bapiadsmt_x-EMAIL_SRCH = 'X'.
+*  APPEND ls_bapiadsmt_x TO lt_bapiadsmt_x.
+*
+*  CLEAR ls_bapicomrem.
+*  ls_bapicomrem-COMM_NOTES = 'ZF96_CREDITOS'.
+*  ls_bapicomrem-COMM_TYPE = 'INT'.
+*  ls_bapicomrem-langu = sy-langu.
+*  ls_bapicomrem-langu_iso = sy-langu.
+**  ls_bapicomrem-CONSNUMBER = '099'.
+*  APPEND ls_bapicomrem TO lt_bapicomrem.
+*
+*  CLEAR ls_bapicomre_x.
+*  ls_bapicomre_x-COMM_NOTES = 'X'.
+*  ls_bapicomre_x-COMM_TYPE = 'X'.
+*  ls_bapicomre_x-langu = 'X'.
+*  ls_bapicomre_x-langu_iso = 'X'.
+*  ls_bapicomre_x-updateflag = 'I'.
+*  APPEND ls_bapicomre_x TO lt_bapicomre_x.
 
-  CLEAR ls_bapiadsmt_x.
-  ls_bapiadsmt_x-UPDATEFLAG = 'I'.
-  ls_bapiadsmt_x-e_mail = 'X'.
-  ls_bapiadsmt_x-EMAIL_SRCH = 'X'.
-  APPEND ls_bapiadsmt_x TO lt_bapiadsmt_x.
-
-  CLEAR ls_bapicomrem.
-  ls_bapicomrem-COMM_NOTES = 'ZF96_CREDITOS'.
-  ls_bapicomrem-COMM_TYPE = 'INT'.
-  ls_bapicomrem-langu = sy-langu.
-  ls_bapicomrem-langu_iso = sy-langu.
-*  ls_bapicomrem-CONSNUMBER = '099'.
-  APPEND ls_bapicomrem TO lt_bapicomrem.
-
-  CLEAR ls_bapicomre_x.
-  ls_bapicomre_x-COMM_NOTES = 'X'.
-  ls_bapicomre_x-COMM_TYPE = 'X'.
-  ls_bapicomre_x-langu = 'X'.
-  ls_bapicomre_x-langu_iso = 'X'.
-  ls_bapicomre_x-updateflag = 'I'.
-  APPEND ls_bapicomre_x TO lt_bapicomre_x.
+*  CLEAR ls_bapiadtel.
+*  ls_bapiadtel-TELEPHONE = '01123 - 453254'.
+**  ls_bapiadsmtp-CONSNUMBER = '099'.
+*  ls_bapiadtel-EXTENSION = 'CREDITOS'.
+*  APPEND ls_bapiadtel TO lt_bapiadtel.
+*
+*  CLEAR ls_bapiadtel_x.
+*  ls_bapiadtel_x-UPDATEFLAG = 'I'.
+*  APPEND ls_bapiadtel_x TO lt_bapiadtel_x.
+*
+*  CLEAR ls_bapicomrem.
+*  ls_bapicomrem-COMM_NOTES = 'Roberto Diaz'.
+*  ls_bapicomrem-COMM_TYPE = 'TEL'.
+*  ls_bapicomrem-langu = sy-langu.
+*  ls_bapicomrem-langu_iso = sy-langu.
+**  ls_bapicomrem-CONSNUMBER = '099'.
+*  APPEND ls_bapicomrem TO lt_bapicomrem.
+*
+*  CLEAR ls_bapicomre_x.
+*  ls_bapicomre_x-COMM_NOTES = 'X'.
+*  ls_bapicomre_x-COMM_TYPE = 'X'.
+*  ls_bapicomre_x-langu = 'X'.
+*  ls_bapicomre_x-langu_iso = 'X'.
+*  ls_bapicomre_x-updateflag = 'I'.
+*  APPEND ls_bapicomre_x TO lt_bapicomre_x.
 
 END-OF-SELECTION.
 
@@ -104,3 +130,5 @@ END-OF-SELECTION.
         wait = 'X'.
     WRITE: /'Bien'.
   ENDIF.
+
+*
